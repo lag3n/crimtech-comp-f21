@@ -13,8 +13,8 @@ If at any point you have any questions or concerns, let Olivia (olivia.wenzel@th
 
 **Schedule**:
 
-9/19 - Week 0: Introduction
+9/19 - Week 0: Introduction (Intro)
 
-We will provided an updated schedule soon!
+9/26 - Week 1: Python
 
 **Playlist**: COMING SOON!
