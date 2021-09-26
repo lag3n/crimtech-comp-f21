@@ -4,8 +4,8 @@ If you're at all familiar with programming, you've probably heard the term "Pyth
 In this lab, we are going to learn some fundamental concepts in Python programming. If you're new to programming (i.e., uncomfortable with variables, conditionals, and some object-oriented concepts like classes), you may want to start by watching (and following along) one of the videos linked in the Extra Resources section at the bottom of this page. Otherwise, feel free to jump into the Python Tutorial and start tackling the to-do list.
 
 ## Python Tutorial
-1. [Hello World/What is Python?](https://www.w3schools.com/python/python_intro.asp)
-2. [Variables](https://www.w3schools.com/python/python_variables.asp)
+1. [Hello World](https://www.w3schools.com/python/python_intro.asp)
+2. [variables](https://www.w3schools.com/python/python_variables.asp)
 3. [if statements](https://www.w3schools.com/python/python_conditions.asp)
 4. [for loops](https://www.w3schools.com/python/python_for_loops.asp)
 5. [while loops](https://www.w3schools.com/python/python_while_loops.asp)
@@ -24,7 +24,7 @@ In this lab, we are going to learn some fundamental concepts in Python programmi
 
 3. In `sum.py`, write a program that takes a list `l` and a number `N` and returns `True` if any two numbers in the list sum to `N`, and `False` otherwise.
 
-    For example: given `l = [1, 2, 4, 5, 6]` and `N = 10`, the program should return `True`, because `4 + 6 = 10`.
+    For example: given `l = [1, 2, 4, 5, 6]` and `N = 10`, the program should return `True` because `4 + 6 = 10`.
     
     Hint: Use `set()`!
 
