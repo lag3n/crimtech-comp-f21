@@ -1,5 +1,9 @@
 def sum(l, N):
-    # Write your code here!
+    for i, item in enumerate(l):
+        for j in range(i+1, len(l)):
+            total_of_two_items = l[i] + l[j]
+            if(total_of_two_items == N):
+                return True
     return False
 
 def test():

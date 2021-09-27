@@ -1,5 +1,11 @@
 def rm_smallest(d):
-    # Your code here!
+    if len(d) == 0:
+        return d
+    min_value_index = 'a'
+    for key in d:
+        if d[key] < d[min_value_index]:
+            min_value_index = key
+    del d[min_value_index]
     return d
 
 def test():

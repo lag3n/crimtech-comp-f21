@@ -1,8 +1,12 @@
 import random
 
 def random_ints():
-    # Write your code here!
+    n= (int) (random.random()*10) + 1
     l = []
+    l.append(n)
+    while n != 7:
+        n= (int) (random.random()*10) + 1
+        l.append(n)
     return l
 
 def test():
