@@ -50,6 +50,7 @@ class Snake(object):
             if self.body[0] == block[0] and self.body[1] == block[1]:
                 return True
         return False
+        pass
     
     def coyote_time(self):
         # TODO: See section 13, "coyote time".
