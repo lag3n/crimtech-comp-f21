@@ -80,7 +80,7 @@ You should change the `msg` variable depending on what `this.state` is.
 ## L: CSS
 Right now the box is small and hard to click on. Let us make it big and nice to click on! Please also align the text in the center.
 
-We recommend using a flex box, which you can learn more about at (https://www.w3schools.com/css/css3_flexbox.asp)[w3schools]. Consider using `justify-content` and `align-items`.
+We recommend using a flex box, which you can learn more about at [w3schools](https://www.w3schools.com/css/css3_flexbox.asp). Consider using `justify-content` and `align-items`.
 
 ## M: Submit!
 Submit your assignment like usual. Congrats on finishing your final lab - you're so close to completing the comp! :)
