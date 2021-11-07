@@ -20,15 +20,15 @@ Feel free to make a commit now so you don't lose your progress.
 
 6. If you are using Chrome, consider getting the [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en) extension. The normal browser developer inspector tool is not very informative for React-based projects, so if you're looking for more help with debugging, we highly recommend checking out this extension! And if you're not using Chrome...well...seek out help please.
 
-# C. Setting Up the Project
+## C. Setting Up the Project
 Run `npx create-react-app reactions` in this folder. The terminal will report any installation error. If so, you can either fix them by seraching on Google or call us over.
 
 Next, *delete the `reactions/src` folder* and copy the `src` folder into `reactions/src`. This contains the starter code we will use to write the app.
 
-# D. Overview of the Project
+## D. Overview of the Project
 You're building a website that tests a user's reaction time. Check out [Human Benchmark](https://humanbenchmark.com/tests/reactiontime) for an example. To start the test, the user will click on a button. That click will make the button turn red, which will start a timer. At some point in the future, the button will turn green. The user should try to click on the button as soon as possible. Based on the timing of the click, you will be able to calculate and output their reaction time.
 
-# E: Getting Acclimated to React
+## E: Getting Acclimated to React
 The style of thinking necessary for building a React app is quite different from what you may learn in CS50 or what you've done for the past comp labs, so we'll try to provide you with more guidance in this README.
 
 First, spend some time browsing the files in the `src` folder. Pay particular attention to `App.js`, where you'll basically spend all your time for this project. Once you've spent a little time reading this file (and perhaps others) over (and you're probably very confused, which is totally normal!), you're ready to start learning a bit more about React!
@@ -37,7 +37,7 @@ If you attended the comp meeting, you may have already watched [this excellent, 
 
 Programming by Mosh's video is great, but you'll need a little more detail to get started developing and understanding our instructions for the lab. So, please read parts 1-6 (Hello World - Handling Events) of [this introductory React guide](https://reactjs.org/docs/hello-world.html). Feel free to read more of the guide if you're interested, but we recommend doing so at a later point. We don't want you to get too overwhelmed by all this new information! Let's focus on solidifying the basics first.
 
-# F: Getting Acclimated to This Project's Starter Code
+## F: Getting Acclimated to This Project's Starter Code
 In `App.js`, you'll find the big boy, the root, of your React App: the `App` component (function). We set up `App` to return (render) a header ("How Fast is your Reaction Time?"), the "button" you'll be using to test your user's reaction time (`Panel`), and some instruction text ("Click as soon as the red box turns green. Click anywhere in the box to start."). Let's take a closer look at your button, the `Panel` component:
 
 The Panel keeps track of the following states:
@@ -47,7 +47,7 @@ The Panel keeps track of the following states:
 * `true_duration`, which will store how long it's supposed to take before the button turns green.
 * `color`, which will store the color of the button.
 
-# G: The `start_count` function
+## G: The `start_count` function
 When we start the counting, we need to set the following states:
 * `start_time` should be set to the current time. In React, the function `window.performance.now()` stores how many milliseconds it has been since the website was loaded. It should be helpful.
 * `true_duration` should be set to some random value between 2s and 7s.
@@ -56,31 +56,31 @@ When we start the counting, we need to set the following states:
 
 Note about React: instead of writing `this.state.counting = true;`, you should use `this.setState({counting:true});`. The setState function informs React that a state has been changed, correctly triggering a re-render of the component. If you change a state variable directly, you can mess up the react framework.
 
-# H: Extra Resources
+## H: Extra Resources
 Before we go any further, if you're feeling very lost right now, we recommend spending some more time learning the basics of React. There are TONS of resources online, and you can probably guess what we'd recommend...another Programming with Mosh video: https://www.youtube.com/watch?v=Ke90Tje7VS0&t=18s
 
-# I: Change color to red after `true_duration` seconds.
+## I: Change color to red after `true_duration` seconds.
 Look into a function called `setTimeout`, and make a function that will change the color of the button to be green. The button should turn green after exactly `true_duration` seconds.
 
 Note about React: if you write `this.setState({counting:true}); console.log(this.state.counting);` you may sometimes find that `this.state.counting` is not set to True. This is because the `setState` function is not guaranteed to change the state right then and there.
 
-# J: The `end_count` function
+## J: The `end_count` function
 If at most `this.state.true_duration` seconds have passed, do nothing. Otherwise, we need to set the following states:
 * `ran_once` should be set to true: we have ran once, after all.
 * `counting` should be set to false: we have finished the game.
 * `reaction_time` should be set to the difference between (the number of seconds that have elapsed) and `this.state.true_duration`.
 
-# K: The `render` function
+## K: The `render` function
 You should change the `msg` variable depending on what `this.state` is.
 * If `this.state.counting` and the button is red, msg is `Wait for Green`.
 * If `this.state.counting` and the button is green, msg is `Click!`.
 * Otherwise, if you have ran once, msg is `Your reaction time is {this.state.reaction_time} ms`.
 * Otherwise, we have never run the test. So, msg is `Click me to begin!`
 
-# L: CSS
+## L: CSS
 Right now the box is small and hard to click on. Let us make it big and nice to click on! Please also align the text in the center.
 
 We recommend using a flex box, which you can learn more about at (https://www.w3schools.com/css/css3_flexbox.asp)[w3schools]. Consider using `justify-content` and `align-items`.
 
-# M: Submit!
+## M: Submit!
 Submit your assignment like usual. Congrats on finishing your final lab - you're so close to completing the comp! :)
