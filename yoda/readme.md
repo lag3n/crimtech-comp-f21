@@ -15,6 +15,7 @@ If you get any merge conflicts, you need to edit the files where the conflict oc
 In this unit you will be using a browser. It is possible to do this using Chrome, Firefox, Edge or Safari, though we will be following Chrome in this assignment.
 
 On any website, right click and choose the **"Inspect"** option. Welcome to inspect mode/developer panel! This is super useful for web development, and let us go through what a couple panels do. Some of them have exercises. Record your answers in `responses.md`.
+
 0. You can adjust how the browser looks! On the upper bar, there is an option called "Responsive". You can change that to, say, an iPhone X to see how the page looks on an iPhone.
 1. `Elements` contains the html source code of the website. Exercise: there is an easter egg on crimtech.github.io. Can you find it?
 2. `Console` allows you to type JavaScript expressions. Exercise: There is some javascript on the website that defined an extra variable. What is that variable, and what is its value?
