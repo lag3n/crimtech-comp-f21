@@ -19,7 +19,14 @@ let std_quotes = ["Patience you must have, my young padawan.",
 "Difficult to see. Always in motion is the future."
 ];
 
-function respond() {
-    // Your Code Here
-    console.log("Hello World!");
+function respond(yoda, quote) {
+    let y = document.getElementById("yoda");
+    let r = document.getElementById("resp");
+
+    y.src=yoda;
+    r.value=quote;
+    y.setattribute('src', yoda);
+    r.setattribute('value', quote);
+
+    console.log(quote);
 }
